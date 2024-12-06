@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature E-mail</title>
+    <style>
+        :root {
+            --primary-color: #4a83c3;
+            --secondary-color: #606060;
+            --text-color: #606060;
+            --highlight-color: #4a83c3;
+            --space-default-colums: 350px;
+        }
+    
+        li {
+            text-decoration: none !important;
+            list-style: none !important;
+        }
+
+        li > div > span {
+            text-align: center;
+            margin: 3px;
+        }
+
+        li > div {
+            display: flex !important;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--text-color);
+        }
+    
+        .table {
+            vertical-align: -webkit-baseline-middle;
+            font-size: medium;
+            font-family: Arial;
+            color: var(--text-color);
+        }
+
+        table > td {
+            vertical-align: middle;
+        }
+    
+        .image-container {
+            margin-right: 20px;
+            display: block;
+            border: var(--highlight-color) solid 3px;
+            border-radius: 55%;
+            padding: 3px;
+            max-width: 150px;
+            min-width: 150px;
+            max-height: 150px;
+            min-height: 150px;
+
+        }
+    
+        .profile-image {
+            max-width: 150px;
+            min-width: 150px;
+            max-height: 150px;
+            min-height: 150px;
+            border-radius: 50% !important;
+        }
+    
+        .profile-infos{
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center;
+        }
+    
+        .profile-contact {
+
+        }
+
+        .data-container {
+            width: 250px !important;
+        }
+    
+        .divider {
+            border-left: var(--highlight-color) solid 3px;
+        }
+        
+        .footer {
+            border-top: var(--highlight-color) solid 3px;
+        }
+    
+        .first-block {
+            width: var(--space-default-colums) !important;
+        }
+        .second-block {
+            width: var(--space-default-colums) !important;
+        }
+
+        .second-line-first-block {
+            width: var(--space-default-colums) !important;
+        }
+        .second-line-second-block {
+            width: var(--space-default-colums) !important;
+        }
+
+        .logo {
+            display: flex !important;
+            max-width: 130px;
+            margin-top: 10px !important;
+        }
+
+        .social-media-icons {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            margin-top: 10px;
+
+        }
+    
+        .path-svg {
+            fill: var(--highlight-color);fill-rule:evenodd;clip-rule:evenodd;enable-background:new 0 0 24 24;
+        }
+    </style>
+</head>
+<body>    
+    <table cellpadding="0" cellspacing="0" border="0" class="table">
+        <tbody>
+            <tr>
+                <!-- First Block Infos -->
+    
+                <td class="first-block">
+                    <div class="profile-infos">
+                        <span class="image-container">
+                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQF1okLKhaLFfA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724557962182?e=1738800000&amp;v=beta&amp;t=WzvJwFCaZS2ZNHlTXwRfR-IvX5ltkV1t_ZMdnVHcvmg"
+                                alt="Profile Picture" width="130" class="profile-image">
+                        </span>
+                        <div class="data-container">
+                            <h3>Nome Completo</h3>
+                            <p>Cargo na empresa</p>
+                        </div>
+                    </div>
+                </td>
+    
+
+    
+                <!-- Second Block Infos -->
+    
+                <td class="second-block divider">
+                    <div>
+                        <ul>
+                            <li>
+                                <div>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" id="Filled" viewBox="0 0 24 24" width="24" height="24" class="path-svg"><path d="M23.954,5.542,15.536,13.96a5.007,5.007,0,0,1-7.072,0L.046,5.542C.032,5.7,0,5.843,0,6V18a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V6C24,5.843,23.968,5.7,23.954,5.542Z"/><path d="M14.122,12.546l9.134-9.135A4.986,4.986,0,0,0,19,1H5A4.986,4.986,0,0,0,.744,3.411l9.134,9.135A3.007,3.007,0,0,0,14.122,12.546Z"/></svg>
+                                    </span>
+                                    
+                                    <span>
+                                        <a href="mailto:email@example.com">email@example.com</a>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" class="path-svg" xml:space="preserve" width="25" height="25">
+                                            <g id="WA_Logo">
+                                                <g>
+                                                    <path class="path-svg" d="M20.463,3.488C18.217,1.24,15.231,0.001,12.05,0    C5.495,0,0.16,5.334,0.157,11.892c-0.001,2.096,0.547,4.142,1.588,5.946L0.057,24l6.304-1.654    c1.737,0.948,3.693,1.447,5.683,1.448h0.005c6.554,0,11.89-5.335,11.893-11.893C23.944,8.724,22.708,5.735,20.463,3.488z     M12.05,21.785h-0.004c-1.774,0-3.513-0.477-5.031-1.378l-0.361-0.214l-3.741,0.981l0.999-3.648l-0.235-0.374    c-0.99-1.574-1.512-3.393-1.511-5.26c0.002-5.45,4.437-9.884,9.889-9.884c2.64,0,5.122,1.03,6.988,2.898    c1.866,1.869,2.893,4.352,2.892,6.993C21.932,17.351,17.498,21.785,12.05,21.785z M17.472,14.382    c-0.297-0.149-1.758-0.868-2.031-0.967c-0.272-0.099-0.47-0.149-0.669,0.148s-0.767,0.967-0.941,1.166    c-0.173,0.198-0.347,0.223-0.644,0.074c-0.297-0.149-1.255-0.462-2.39-1.475c-0.883-0.788-1.48-1.761-1.653-2.059    s-0.018-0.458,0.13-0.606c0.134-0.133,0.297-0.347,0.446-0.521C9.87,9.97,9.919,9.846,10.019,9.647    c0.099-0.198,0.05-0.372-0.025-0.521C9.919,8.978,9.325,7.515,9.078,6.92c-0.241-0.58-0.486-0.501-0.669-0.51    C8.236,6.401,8.038,6.4,7.839,6.4c-0.198,0-0.52,0.074-0.792,0.372c-0.272,0.298-1.04,1.017-1.04,2.479    c0,1.463,1.065,2.876,1.213,3.074c0.148,0.198,2.095,3.2,5.076,4.487c0.709,0.306,1.263,0.489,1.694,0.626    c0.712,0.226,1.36,0.194,1.872,0.118c0.571-0.085,1.758-0.719,2.006-1.413c0.248-0.694,0.248-1.29,0.173-1.413    C17.967,14.605,17.769,14.531,17.472,14.382z"/>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <span>(41) 98765-9874</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="24" height="24" class="path-svg"><path d="M12,0A12,12,0,1,0,24,12,12.013,12.013,0,0,0,12,0Zm8.657,7H17.431A19.675,19.675,0,0,0,14.6,2.342,10.041,10.041,0,0,1,20.657,7ZM16.5,12a10.209,10.209,0,0,1-.473,3H7.973A10.209,10.209,0,0,1,7.5,12a10.209,10.209,0,0,1,.473-3h8.054A10.209,10.209,0,0,1,16.5,12ZM8.774,17h6.452A19.562,19.562,0,0,1,12,21.588,19.562,19.562,0,0,1,8.774,17Zm0-10A19.562,19.562,0,0,1,12,2.412,19.562,19.562,0,0,1,15.226,7ZM9.4,2.342A19.7,19.7,0,0,0,6.569,7H3.343A10.041,10.041,0,0,1,9.4,2.342ZM2.46,9H5.892a11.676,11.676,0,0,0,0,6H2.46a10.013,10.013,0,0,1,0-6Zm.883,8H6.569A19.675,19.675,0,0,0,9.4,21.658,10.041,10.041,0,0,1,3.343,17ZM14.6,21.658A19.7,19.7,0,0,0,17.431,17h3.226A10.041,10.041,0,0,1,14.6,21.658ZM21.54,15H18.108a11.676,11.676,0,0,0,0-6H21.54a10.013,10.013,0,0,1,0,6Z"/></svg>
+
+                                    </span>
+    
+                                    <span>
+                                        <a href="mailto:atendimento@zr2.com.br"
+                                        class="contact-info-text">atendimento@zr2.com.br</a>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="space-default-colums">&nbsp;</td>
+                <td class="space-default-colums">&nbsp;</td>
+            </tr>
+            
+            <tr>
+                <td class="second-line-first-block"></td>
+                <td class="second-line-second-block"></td>
+            </tr>
+            
+
+            <tr>
+                <td class="footer ">
+                    <div class="logo">
+                        <img
+                        src="https://github.com/fabioacarvalho/brunasantana/blob/main/LOGO%20PREFERENCIAL%20MOD-C%20PNG.png?raw=true" role="presentation"
+                        width="130" class="image__StyledImage-sc-hupvqm-0 iQUdAH"
+                        style="display: inline-block; max-width: 130px;">
+                    </div>
+                </td>
+                <td class="footer">
+                    <div class="social-media-icons">
+                        <a href="https://www.instagram.com/" color="#4a83c3"
+                            class="social-links__LinkAnchor-sc-py8uhj-2 jQPMbH"
+                            style="display: inline-block; padding: 0px; background-color: #4a83c3;">
+                            <img
+                                src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/instagram-icon-2x.png"
+                                alt="instagram" color="#4a83c3" width="24"
+                                class="social-links__LinkImage-sc-py8uhj-1 cnQsdS"
+                                style="background-color: #4a83c3; max-width: 135px; display: block;">
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/" color="#4a83c3"
+                            class="social-links__LinkAnchor-sc-py8uhj-2 jQPMbH"
+                            style="display: inline-block; padding: 0px; background-color: #4a83c3;"><img
+                                src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/linkedin-icon-2x.png"
+                                alt="linkedin" color="#4a83c3" width="24"
+                                class="social-links__LinkImage-sc-py8uhj-1 cnQsdS"
+                                style="background-color: #4a83c3; max-width: 135px; display: block;">
+                        </a>
+
+                        <a href="https://www.facebook.com/" color="#4a83c3"
+                            class="social-links__LinkAnchor-sc-py8uhj-2 jQPMbH"
+                            style="display: inline-block; padding: 0px; background-color: #4a83c3;"><img
+                                src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/facebook-icon-2x.png"
+                                alt="facebook" color="#4a83c3" width="24"
+                                class="social-links__LinkImage-sc-py8uhj-1 cnQsdS"
+                                style="background-color: #4a83c3; max-width: 135px; display: block;">
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
