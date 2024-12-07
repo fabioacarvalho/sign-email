@@ -4,125 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signature E-mail</title>
-    <style>
-        :root {
-            --primary-color: #4a83c3;
-            --secondary-color: #606060;
-            --text-color: #606060;
-            --highlight-color: #4a83c3;
-            --space-default-colums: 350px;
-        }
-    
-        li {
-            text-decoration: none !important;
-            list-style: none !important;
-        }
-
-        li > div > span {
-            text-align: center;
-            margin: 3px;
-        }
-
-        li > div {
-            display: flex !important;
-            align-items: center;
-            justify-content: flex-start;
-        }
-
-        a {
-            text-decoration: none;
-            color: var(--text-color);
-        }
-    
-        .table {
-            vertical-align: -webkit-baseline-middle;
-            font-size: medium;
-            font-family: Arial;
-            color: var(--text-color);
-        }
-
-        table > td {
-            vertical-align: middle;
-        }
-    
-        .image-container {
-            margin-right: 20px;
-            display: block;
-            border: var(--highlight-color) solid 3px;
-            border-radius: 55%;
-            padding: 3px;
-            max-width: 150px;
-            min-width: 150px;
-            max-height: 150px;
-            min-height: 150px;
-
-        }
-    
-        .profile-image {
-            max-width: 150px;
-            min-width: 150px;
-            max-height: 150px;
-            min-height: 150px;
-            border-radius: 50% !important;
-        }
-    
-        .profile-infos{
-            display: flex !important;
-            flex-direction: row !important;
-            align-items: center;
-        }
-    
-        .profile-contact {
-
-        }
-
-        .data-container {
-            width: 250px !important;
-        }
-    
-        .divider {
-            border-left: var(--highlight-color) solid 3px;
-        }
-        
-        .footer {
-            border-top: var(--highlight-color) solid 3px;
-        }
-    
-        .first-block {
-            width: var(--space-default-colums) !important;
-        }
-        .second-block {
-            width: var(--space-default-colums) !important;
-        }
-
-        .second-line-first-block {
-            width: var(--space-default-colums) !important;
-        }
-        .second-line-second-block {
-            width: var(--space-default-colums) !important;
-        }
-
-        .logo {
-            display: flex !important;
-            max-width: 130px;
-            margin-top: 10px !important;
-        }
-
-        .social-media-icons {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: flex-start;
-            margin-top: 10px;
-
-        }
-    
-        .path-svg {
-            fill: var(--highlight-color);fill-rule:evenodd;clip-rule:evenodd;enable-background:new 0 0 24 24;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>    
-    <table cellpadding="0" cellspacing="0" border="0" class="table">
+    <table id="emailSignature" cellpadding="0" cellspacing="0" border="0" class="table">
         <tbody>
             <tr>
                 <!-- First Block Infos -->
@@ -130,12 +15,12 @@
                 <td class="first-block">
                     <div class="profile-infos">
                         <span class="image-container">
-                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQF1okLKhaLFfA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724557962182?e=1738800000&amp;v=beta&amp;t=WzvJwFCaZS2ZNHlTXwRfR-IvX5ltkV1t_ZMdnVHcvmg"
+                            <img id="profile-sign" src="https://media.licdn.com/dms/image/v2/D4D03AQF1okLKhaLFfA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724557962182?e=1738800000&amp;v=beta&amp;t=WzvJwFCaZS2ZNHlTXwRfR-IvX5ltkV1t_ZMdnVHcvmg"
                                 alt="Profile Picture" width="130" class="profile-image">
                         </span>
                         <div class="data-container">
-                            <h3>Nome Completo</h3>
-                            <p>Cargo na empresa</p>
+                            <h3 id="name-sign">Fábio Alex de Carvalho</h3>
+                            <p id="position-sign">Software Developer</p>
                         </div>
                     </div>
                 </td>
@@ -154,7 +39,7 @@
                                     </span>
                                     
                                     <span>
-                                        <a href="mailto:email@example.com">email@example.com</a>
+                                        <a href="mailto:fabioxcarvalho@outlook.com" id="email-sign">fabioxcarvalho@outlook.com</a>
                                     </span>
                                 </div>
                             </li>
@@ -169,7 +54,7 @@
                                             </g>
                                         </svg>
                                     </span>
-                                    <a id="phone-sign" target="_blank" href="https://api.whatsapp.com/send?phone=5541998745612">(41) 99874-5612</a>
+                                    <a id="phone-sign" target="_blank" href="https://api.whatsapp.com/send?phone=5541998471699">(41) 99847-1699</a>
                                 </div>
                             </li>
                             <li>
@@ -180,8 +65,8 @@
                                     </span>
     
                                     <span>
-                                        <a href="mailto:atendimento@zr2.com.br"
-                                        class="contact-info-text">atendimento@zr2.com.br</a>
+                                        <a id="site-sign" target="_blank" href="https://oflowtech.blogspot.com/"
+                                        class="contact-info-text">https://oflowtech.blogspot.com/</a>
                                     </span>
                                 </div>
                             </li>
@@ -201,10 +86,10 @@
             </tr>
             
 
-            <tr>
-                <td class="footer ">
-                    <div class="logo">
-                        <img
+            <tr id="footer-sign">
+                <td class="footer">
+                    <div id="logo-sign" class="logo" disa>
+                        <img 
                         src="https://github.com/fabioacarvalho/brunasantana/blob/main/LOGO%20PREFERENCIAL%20MOD-C%20PNG.png?raw=true" role="presentation"
                         width="130" class="image__StyledImage-sc-hupvqm-0 iQUdAH"
                         style="display: inline-block; max-width: 130px;">
@@ -212,7 +97,7 @@
                 </td>
                 <td class="footer">
                     <div class="social-media-icons">
-                        <a href="https://www.instagram.com/" color="#4a83c3"
+                        <a id="instagram-sign" target="_blank" href="https://www.instagram.com/" color="#4a83c3"
                             class="social-links__LinkAnchor-sc-py8uhj-2 jQPMbH"
                             style="display: inline-block; padding: 0px; background-color: #4a83c3;">
                             <img
@@ -222,20 +107,11 @@
                                 style="background-color: #4a83c3; max-width: 135px; display: block;">
                         </a>
 
-                        <a href="https://www.linkedin.com/in/" color="#4a83c3"
+                        <a id="linkedin-sign" target="_blank" href="https://www.linkedin.com/in/fabioacarvalho" color="#4a83c3"
                             class="social-links__LinkAnchor-sc-py8uhj-2 jQPMbH"
                             style="display: inline-block; padding: 0px; background-color: #4a83c3;"><img
                                 src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/linkedin-icon-2x.png"
                                 alt="linkedin" color="#4a83c3" width="24"
-                                class="social-links__LinkImage-sc-py8uhj-1 cnQsdS"
-                                style="background-color: #4a83c3; max-width: 135px; display: block;">
-                        </a>
-
-                        <a href="https://www.facebook.com/" color="#4a83c3"
-                            class="social-links__LinkAnchor-sc-py8uhj-2 jQPMbH"
-                            style="display: inline-block; padding: 0px; background-color: #4a83c3;"><img
-                                src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/facebook-icon-2x.png"
-                                alt="facebook" color="#4a83c3" width="24"
                                 class="social-links__LinkImage-sc-py8uhj-1 cnQsdS"
                                 style="background-color: #4a83c3; max-width: 135px; display: block;">
                         </a>
@@ -244,5 +120,90 @@
             </tr>
         </tbody>
     </table>
+
+    <br>
+    <hr>
+    
+    <div class="tools container">
+        <div class="controls">
+            <button class="copy-button-source-code" onclick="copySignatureSourceCode()">Copy Source Code</button>
+            <button class="copy-button" onclick="copySignature()">Copy Signature</button>
+            <button class="copy-button" onclick="copyToClipboard()">Copy Signature 2</button>
+    
+    
+            <div class="notification" id="notification">Assinatura copiada para a área de transferência!</div>
+        </div>
+
+        <h1>Change Signature</h1>
+
+        <div class="fields container">
+
+            <div class="block-one container">
+
+                <div class="block-two container-reverse">
+                    <div>
+                        <label for="hd-footer">Hidden Footer</label>
+                        <input type="checkbox" name="hd-footer" id="hd-footer">
+                    </div>
+                    <div>
+                        <label for="hd-instagram">Hidden Instagram</label>
+                        <input type="checkbox" name="hd-instagram" id="hd-instagram">
+                    </div>
+                    <div>
+                        <label for="hd-linkedin">Hidden LinkedIn</label>
+                        <input type="checkbox" name="hd-linkedin" id="hd-linkedin">
+                    </div>
+                    <div>
+                        <label for="hd-facebook">Hidden Facebook</label>
+                        <input type="checkbox" name="hd-facebook" id="hd-facebook">
+                    </div>
+                    <div>
+                        <label for="hd-logo">Hidden Logo Company</label>
+                        <input type="checkbox" name="hd-logo" id="hd-logo">
+                    </div>
+                </div>
+
+                <div>
+                    <p>Name</p>
+                    <input type="text" name="name" id="name" placeholder="Your name here..." oninput="updateText('name', 'name-sign')">
+                </div>
+    
+                <div>
+                    <p>Position</p>
+                    <input type="text" name="position" id="position" placeholder="Your position here..." oninput="updateText('position', 'position-sign')">
+                </div>
+    
+                <div>
+                    <p>E-mail</p>
+                    <input type="email" name="email" id="email" placeholder="Your E-mail here..." oninput="updateText('email', 'email-sign')">
+                </div>
+    
+                <div>
+                    <p>Phone</p>
+                    <input type="text" name="phone" id="phone" placeholder="Your phone here..." oninput="updateText('phone', 'phone-sign')">
+                </div>
+    
+                <div>
+                    <p>Site</p>
+                    <input type="text" name="site" id="site" placeholder="Your site here..." oninput="updateText('site', 'site-sign')">
+                </div>
+
+                <div>
+                    <p>Logo</p>
+                    <input type="url" name="logo" id="logo" placeholder="Your URL logo here..." oninput="updateSrc('logo', 'logo-sign')">
+                </div>
+
+                <div>
+                    <p>Image Profile</p>
+                    <input type="url" name="profile" id="profile" placeholder="Your URL profile here..." oninput="updateSrc('profile', 'profile-sign')">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>

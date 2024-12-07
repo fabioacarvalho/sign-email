@@ -1,0 +1,229 @@
+:root {
+    --primary-color: #4a83c3;
+    --secondary-color: #606060;
+    --text-color: #606060;
+    --highlight-color: #4a83c3;
+    --space-default-colums: 250px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-reverse {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1, h2 {
+    margin-bottom: 0;
+}
+p {
+    margin-top: 0;
+}
+
+li {
+    text-decoration: none !important;
+    list-style: none !important;
+}
+
+li > div > span {
+    text-align: center;
+    margin: 3px;
+}
+
+li > div {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.table {
+    vertical-align: -webkit-baseline-middle;
+    font-size: medium;
+    font-family: Arial;
+    color: var(--text-color);
+}
+
+table > td {
+    vertical-align: middle;
+}
+
+.image-container {
+    margin-right: 10px;
+    display: block;
+    border: var(--highlight-color) solid 3px;
+    border-radius: 55%;
+    padding: 3px;
+    max-width: 100px;
+    min-width: 100px;
+    max-height: 100px;
+    min-height: 100px;
+
+}
+
+.profile-image {
+    max-width: 100px;
+    min-width: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    border-radius: 50% !important;
+}
+
+.profile-infos{
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+}
+
+.profile-contact {
+
+}
+
+.data-container {
+    width: 200px !important;
+}
+
+.divider {
+    border-left: var(--highlight-color) solid 3px;
+}
+
+.footer {
+    border-top: var(--highlight-color) solid 3px;
+}
+
+.first-block {
+    width: var(--space-default-colums) !important;
+}
+.second-block {
+    width: var(--space-default-colums) !important;
+}
+
+.second-line-first-block {
+    width: var(--space-default-colums) !important;
+}
+.second-line-second-block {
+    width: var(--space-default-colums) !important;
+}
+
+.logo {
+    display: flex !important;
+    max-width: 130px;
+    margin-top: 10px !important;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 10px;
+
+}
+
+.path-svg {
+    fill: var(--highlight-color);fill-rule:evenodd;clip-rule:evenodd;enable-background:new 0 0 24 24;
+}
+
+/* Button Copy Sign */
+
+.controls {
+    margin-top: 50px;
+}
+
+.signature-container {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.copy-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.copy-button:hover {
+    background-color: #45a049;
+}
+
+.copy-button-source-code {
+    background-color: #4a83c3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.copy-button-source-code:hover {
+    background-color: #325f92;
+}
+
+.notification {
+    margin-top: 10px;
+    color: green;
+    font-size: 14px;
+    display: none;
+}
+
+/* Tools */
+
+.tools {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+}
+
+.fields {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 30px !important;
+}
+
+.block-one > div {
+    margin-top: 20px;
+}
+
+.block-two > div {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 300px !important;
+}
+
+.block-two > div > input {
+    text-align: center !important;
+    max-width: 300px !important;
+}
+
+input {
+    padding: 5px;
+    border: 1px solid var(--highlight-color);
+    border-radius: 5px;
+    height: 30px;
+    width: 600px;
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+#emailSignature {
+    width: 100%;
+    max-width: 400px !important;
+}
